@@ -5,118 +5,31 @@
 <title>English Presentation - Systems Engineer</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Georgia', serif;
-    background: #e8e8e8;
-    padding: 40px 20px;
-    color: #222;
-  }
-  .page {
-    background: #fff;
-    max-width: 850px;
-    margin: 0 auto 40px auto;
-    padding: 50px 60px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    border-left: 4px solid #c0392b;
-    min-height: 900px;
-  }
-  .page-number {
-    text-align: right;
-    font-size: 12px;
-    color: #999;
-    margin-top: 40px;
-    font-style: italic;
-  }
-  h1 {
-    font-size: 28px;
-    color: #c0392b;
-    border-bottom: 2px solid #c0392b;
-    padding-bottom: 12px;
-    margin-bottom: 22px;
-  }
-  h2 {
-    font-size: 20px;
-    color: #2c3e50;
-    margin: 22px 0 10px 0;
-  }
-  p {
-    font-size: 16px;
-    line-height: 1.8;
-    margin-bottom: 14px;
-    text-align: justify;
-  }
-  ul {
-    margin: 12px 0 12px 30px;
-  }
-  li {
-    font-size: 16px;
-    line-height: 1.9;
-    margin-bottom: 6px;
-  }
-  .translation {
-    background: #f7f7f7;
-    border-left: 3px solid #2980b9;
-    padding: 12px 18px;
-    margin: 12px 0 20px 0;
-    font-size: 14px;
-    color: #555;
-    font-style: italic;
-    line-height: 1.7;
-  }
-  .translation strong {
-    color: #2980b9;
-    font-style: normal;
-  }
-  .speak-btn {
-    display: inline-block;
-    background: #c0392b;
-    color: #fff;
-    border: none;
-    padding: 10px 22px;
-    font-size: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px 6px 10px 0;
-    transition: background 0.2s;
-    font-family: Arial, sans-serif;
-  }
+  body { font-family: 'Georgia', serif; background: #e8e8e8; padding: 40px 20px; color: #222; }
+  .page { background: #fff; max-width: 850px; margin: 0 auto 40px auto; padding: 50px 60px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); border-left: 4px solid #c0392b; }
+  .page-number { text-align: right; font-size: 12px; color: #999; margin-top: 40px; font-style: italic; }
+  h1 { font-size: 28px; color: #c0392b; border-bottom: 2px solid #c0392b; padding-bottom: 12px; margin-bottom: 22px; }
+  h2 { font-size: 20px; color: #2c3e50; margin: 22px 0 10px 0; }
+  p { font-size: 16px; line-height: 1.8; margin-bottom: 14px; text-align: justify; }
+  .translation { background: #f7f7f7; border-left: 3px solid #2980b9; padding: 12px 18px; margin: 12px 0 20px 0; font-size: 14px; color: #555; font-style: italic; line-height: 1.7; }
+  .translation strong { color: #2980b9; font-style: normal; }
+  .voice-panel { background: #fff8e1; border: 2px solid #f39c12; padding: 15px 20px; border-radius: 8px; margin: 15px 0; }
+  .voice-panel .label { font-size: 13px; color: #7f6000; margin-bottom: 10px; font-weight: bold; font-family: Arial, sans-serif; }
+  .speak-btn { display: inline-block; background: #c0392b; color: #fff; border: none; padding: 12px 24px; font-size: 16px; border-radius: 6px; cursor: pointer; margin: 5px 8px 5px 0; font-family: Arial, sans-serif; font-weight: bold; }
   .speak-btn:hover { background: #a93226; }
   .speak-btn.stop { background: #2c3e50; }
-  .speak-btn.stop:hover { background: #1a252f; }
-  .header-info {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .header-info h1 {
-    border: none;
-    font-size: 34px;
-    margin-bottom: 5px;
-  }
-  .divider {
-    height: 2px;
-    background: #c0392b;
-    width: 80px;
-    margin: 15px auto;
-  }
-  .badge {
-    display: inline-block;
-    background: #c0392b;
-    color: #fff;
-    padding: 4px 12px;
-    font-size: 12px;
-    border-radius: 3px;
-    letter-spacing: 1px;
-  }
-  @media print {
-    body { background: #fff; padding: 0; }
-    .page { box-shadow: none; margin: 0; }
-    .speak-btn { display: none; }
-  }
+  .status { margin-top: 8px; font-size: 13px; color: #27ae60; font-family: Arial, sans-serif; }
+  .status.error { color: #c0392b; }
+  .header-info { text-align: center; margin-bottom: 30px; }
+  .header-info h1 { border: none; font-size: 34px; margin-bottom: 5px; }
+  .divider { height: 2px; background: #c0392b; width: 80px; margin: 15px auto; }
+  .badge { display: inline-block; background: #c0392b; color: #fff; padding: 4px 12px; font-size: 12px; border-radius: 3px; }
+  @media print { body { background: #fff; padding: 0; } .page { box-shadow: none; } .voice-panel { display: none; } }
 </style>
 </head>
 <body>
 
-<!-- ==================== HOJA 1 ==================== -->
+<!-- ============ HOJA 1 ============ -->
 <div class="page">
   <div class="header-info">
     <h1>My Professional Profile</h1>
@@ -125,204 +38,362 @@
   </div>
 
   <h2>Introduction</h2>
-  <p id="text1">Good morning. My name is Giner Figueroa, and I am a recently graduated Systems Engineer. I would like to share with you a brief presentation about myself, my academic background, and my professional goals. I am passionate about technology, cybersecurity, and data science.</p>
+  <p id="text1">
+Good morning, everyone. My name is Giner Figueroa, and I am a recently graduated Systems Engineer from Peru. I would like to share with you a complete and detailed presentation about myself, my academic background, my technical skills, my work experience, and my professional goals.
+<br><br>
+I was born and raised in Peru, a beautiful country in South America with a rich culture and a growing technology industry. From a very young age, I became interested in computers, software, and everything related to technology. I remember spending hours exploring how computers worked, installing programs, and learning basic programming by myself. That curiosity and passion are the reasons why I decided to study Systems Engineering at the university.
+<br><br>
+During my years as a student, I discovered that technology is not only about machines and code, but also about solving real problems for real people. I learned that a good engineer must understand the needs of the users, design efficient solutions, and always consider security, ethics, and sustainability. These values became the foundation of my professional identity.
+<br><br>
+Today, I am proud to say that I am a Systems Engineer with a strong foundation in software development, networks, databases, cybersecurity, and data science. I am passionate about ethical hacking and information security, and I am constantly learning new tools, frameworks, and methodologies to stay updated in this fast-changing field.
+<br><br>
+My main goal is to contribute to the technological development of my country and the world, helping companies and people protect their information and improve their digital lives. I am a responsible, honest, and hardworking person, and I am always ready to face new challenges with enthusiasm and dedication. Thank you very much for your attention, and I hope you enjoy this presentation.
+  </p>
 
-  <button class="speak-btn" onclick="speak('text1')">🔊 Listen in English</button>
-  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
+  <div class="voice-panel">
+    <div class="label">🎧 LISTEN IN ENGLISH:</div>
+    <button class="speak-btn" onclick="speak('text1')">🔊 Escuchar en inglés</button>
+    <button class="speak-btn stop" onclick="stopSpeak()">⏹ Detener</button>
+    <div class="status" id="status1"></div>
+  </div>
 
   <div class="translation">
-    <strong>Traducción:</strong> Buenos días. Mi nombre es Giner Figueroa y soy un Ingeniero de Sistemas recién egresado. Me gustaría compartir con ustedes una breve presentación sobre mí, mi formación académica y mis metas profesionales. Me apasiona la tecnología, la ciberseguridad y la ciencia de datos.
+    <strong>Traducción:</strong> Buenos días a todos. Mi nombre es Giner Figueroa y soy un Ingeniero de Sistemas recién egresado del Perú. Me gustaría compartir con ustedes una presentación completa y detallada sobre mí, mi formación académica, mis habilidades técnicas, mi experiencia laboral y mis metas profesionales. Nací y crecí en Perú, un país hermoso de Sudamérica con una cultura rica y una industria tecnológica en crecimiento. Desde muy pequeño me interesé por las computadoras, el software y todo lo relacionado con la tecnología. Recuerdo pasar horas explorando cómo funcionaban las computadoras, instalando programas y aprendiendo programación básica por mi cuenta. Esa curiosidad y pasión son las razones por las que decidí estudiar Ingeniería de Sistemas en la universidad. Durante mis años como estudiante, descubrí que la tecnología no solo se trata de máquinas y código, sino también de resolver problemas reales para personas reales. Aprendí que un buen ingeniero debe entender las necesidades de los usuarios, diseñar soluciones eficientes y considerar siempre la seguridad, la ética y la sostenibilidad. Estos valores se convirtieron en la base de mi identidad profesional. Hoy, me enorgullece decir que soy un Ingeniero de Sistemas con una sólida base en desarrollo de software, redes, bases de datos, ciberseguridad y ciencia de datos. Me apasiona el hacking ético y la seguridad de la información, y constantemente aprendo nuevas herramientas, frameworks y metodologías para mantenerme actualizado en este campo que cambia rápidamente. Mi principal meta es contribuir al desarrollo tecnológico de mi país y del mundo, ayudando a empresas y personas a proteger su información y mejorar sus vidas digitales. Soy una persona responsable, honesta y trabajadora, y siempre estoy listo para enfrentar nuevos retos con entusiasmo y dedicación. Muchas gracias por su atención y espero que disfruten esta presentación.
   </div>
 
   <p class="page-number">Page 1 of 10</p>
 </div>
 
-<!-- ==================== HOJA 2 ==================== -->
+<!-- ============ HOJA 2 ============ -->
 <div class="page">
   <h1>Personal Information</h1>
-
   <h2>Who I Am</h2>
-  <p id="text2">My full name is Giner Figueroa. I am a Systems Engineer from Peru. I speak Spanish as my native language, and I am improving my English every day. My main areas of interest are ethical hacking, data science, and web development.</p>
+  <p id="text2">
+My full name is Giner Figueroa, and I am a Systems Engineer graduated from a recognized university in Peru. I am a young professional with a strong passion for technology, innovation, and continuous learning. I consider myself a person with clear goals, strong values, and a deep commitment to personal and professional growth.
+<br><br>
+I was born in a small city in Peru, where I grew up in a loving family that always supported my dreams. My parents taught me the importance of hard work, honesty, and respect for others. These values have guided me throughout my life and have shaped the professional I am today.
+<br><br>
+I speak Spanish as my native language, and I have been studying English for several years. I can communicate effectively in English in both written and spoken form, and I continue to improve my fluency every day. I believe that speaking English is essential in the technology field because most documentation, courses, and international opportunities are in this language.
+<br><br>
+My main areas of interest are ethical hacking, information security, data science, and web development. I am fascinated by how technology can be used both to protect and to attack, and I have chosen to use my knowledge for good, helping companies and people defend themselves against cyber threats.
+<br><br>
+In my free time, I enjoy reading about new technologies, practicing programming, and learning about cybersecurity techniques. I also like sports, music, and spending time with my family and friends. I believe that a balanced life is important for professional success, and I always try to maintain harmony between work, study, and personal life. I am excited about the future and the opportunities that await me as a Systems Engineer.
+  </p>
 
-  <button class="speak-btn" onclick="speak('text2')">🔊 Listen in English</button>
-  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
+  <div class="voice-panel">
+    <div class="label">🎧 LISTEN IN ENGLISH:</div>
+    <button class="speak-btn" onclick="speak('text2')">🔊 Escuchar en inglés</button>
+    <button class="speak-btn stop" onclick="stopSpeak()">⏹ Detener</button>
+    <div class="status" id="status2"></div>
+  </div>
 
   <div class="translation">
-    <strong>Traducción:</strong> Mi nombre completo es Giner Figueroa. Soy Ingeniero de Sistemas de Perú. Hablo español como lengua materna y mejoro mi inglés cada día. Mis principales áreas de interés son el hacking ético, la ciencia de datos y el desarrollo web.
+    <strong>Traducción:</strong> Mi nombre completo es Giner Figueroa y soy un Ingeniero de Sistemas egresado de una universidad reconocida del Perú. Soy un joven profesional con una fuerte pasión por la tecnología, la innovación y el aprendizaje continuo. Me considero una persona con metas claras, valores sólidos y un profundo compromiso con el crecimiento personal y profesional. Nací en una pequeña ciudad del Perú, donde crecí en una familia amorosa que siempre apoyó mis sueños. Mis padres me enseñaron la importancia del trabajo duro, la honestidad y el respeto por los demás. Estos valores me han guiado a lo largo de mi vida y han formado al profesional que soy hoy. Hablo español como lengua materna y he estudiado inglés durante varios años. Puedo comunicarme eficazmente en inglés tanto de forma escrita como oral, y sigo mejorando mi fluidez cada día. Creo que hablar inglés es esencial en el campo de la tecnología porque la mayoría de la documentación, cursos y oportunidades internacionales están en este idioma. Mis principales áreas de interés son el hacking ético, la seguridad de la información, la ciencia de datos y el desarrollo web. Me fascina cómo la tecnología puede usarse tanto para proteger como para atacar, y he elegido usar mi conocimiento para el bien, ayudando a empresas y personas a defenderse de las amenazas cibernéticas. En mi tiempo libre, disfruto leer sobre nuevas tecnologías, practicar programación y aprender sobre técnicas de ciberseguridad. También me gustan los deportes, la música y pasar tiempo con mi familia y amigos. Creo que una vida equilibrada es importante para el éxito profesional, y siempre trato de mantener la armonía entre el trabajo, el estudio y la vida personal. Estoy emocionado por el futuro y las oportunidades que me esperan como Ingeniero de Sistemas.
   </div>
 
   <p class="page-number">Page 2 of 10</p>
 </div>
 
-<!-- ==================== HOJA 3 ==================== -->
+<!-- ============ HOJA 3 ============ -->
 <div class="page">
   <h1>Academic Background</h1>
-
   <h2>University Education</h2>
-  <p id="text3">I studied Systems Engineering at the university. During my studies, I gained strong knowledge in software development, networks, databases, and information security. I learned how to design, implement, and manage technological solutions for real-world problems.</p>
+  <p id="text3">
+I studied Systems Engineering at the university for five years, and it was one of the most enriching experiences of my life. During this time, I gained strong knowledge in software development, computer networks, databases, operating systems, information security, and data science. Each course gave me new tools and perspectives to understand how technology works and how it can be applied to solve real-world problems.
+<br><br>
+The first years of my studies focused on the fundamentals: mathematics, programming logic, algorithms, and data structures. I learned languages like Java, C++, and Python, and I discovered that programming is not only about writing code but also about thinking logically, solving problems, and designing efficient solutions.
+<br><br>
+In the following years, I studied more advanced subjects such as databases, computer networks, operating systems, and software engineering. I learned how to design and manage relational databases using SQL, how to configure and secure networks, and how to develop complete software projects using modern methodologies like agile and Scrum.
+<br><br>
+One of the areas that interested me the most was information security. I took courses on cybersecurity, cryptography, and ethical hacking, where I learned how attackers think and how defenders can protect systems. This knowledge inspired me to specialize in this field and to pursue a career in cybersecurity.
+<br><br>
+For my final project, I developed a web application focused on cybersecurity awareness, where users could learn about ethical hacking, safe internet practices, and how to protect their personal data. This project allowed me to apply everything I had learned during my studies and to demonstrate my skills in web development, databases, and security. Today, I am proud of my academic background and grateful for the education I received, which prepared me to face the challenges of the professional world.
+  </p>
 
-  <button class="speak-btn" onclick="speak('text3')">🔊 Listen in English</button>
-  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
+  <div class="voice-panel">
+    <div class="label">🎧 LISTEN IN ENGLISH:</div>
+    <button class="speak-btn" onclick="speak('text3')">🔊 Escuchar en inglés</button>
+    <button class="speak-btn stop" onclick="stopSpeak()">⏹ Detener</button>
+    <div class="status" id="status3"></div>
+  </div>
 
   <div class="translation">
-    <strong>Traducción:</strong> Estudié Ingeniería de Sistemas en la universidad. Durante mis estudios, adquirí sólidos conocimientos en desarrollo de software, redes, bases de datos y seguridad de la información. Aprendí a diseñar, implementar y gestionar soluciones tecnológicas para problemas del mundo real.
+    <strong>Traducción:</strong> Estudié Ingeniería de Sistemas en la universidad durante cinco años, y fue una de las experiencias más enriquecedoras de mi vida. Durante este tiempo, adquirí sólidos conocimientos en desarrollo de software, redes de computadoras, bases de datos, sistemas operativos, seguridad de la información y ciencia de datos. Cada curso me dio nuevas herramientas y perspectivas para entender cómo funciona la tecnología y cómo puede aplicarse para resolver problemas del mundo real. Los primeros años de mis estudios se centraron en los fundamentos: matemáticas, lógica de programación, algoritmos y estructuras de datos. Aprendí lenguajes como Java, C++ y Python, y descubrí que la programación no solo se trata de escribir código, sino también de pensar lógicamente, resolver problemas y diseñar soluciones eficientes. En los años siguientes, estudié materias más avanzadas como bases de datos, redes de computadoras, sistemas operativos e ingeniería de software. Aprendí a diseñar y gestionar bases de datos relacionales usando SQL, a configurar y asegurar redes, y a desarrollar proyectos de software completos usando metodologías modernas como ágil y Scrum. Una de las áreas que más me interesó fue la seguridad de la información. Llevé cursos de ciberseguridad, criptografía y hacking ético, donde aprendí cómo piensan los atacantes y cómo los defensores pueden proteger los sistemas. Este conocimiento me inspiró a especializarme en este campo y a seguir una carrera en ciberseguridad. Para mi proyecto final, desarrollé una aplicación web enfocada en la concientización sobre ciberseguridad, donde los usuarios podían aprender sobre hacking ético, prácticas seguras en internet y cómo proteger sus datos personales. Este proyecto me permitió aplicar todo lo que había aprendido durante mis estudios y demostrar mis habilidades en desarrollo web, bases de datos y seguridad. Hoy, estoy orgulloso de mi formación académica y agradecido por la educación que recibí, que me preparó para enfrentar los desafíos del mundo profesional.
   </div>
 
   <p class="page-number">Page 3 of 10</p>
 </div>
 
-<!-- ==================== HOJA 4 ==================== -->
+<!-- ============ HOJA 4 ============ -->
 <div class="page">
   <h1>Main Subjects</h1>
-
   <h2>What I Learned</h2>
-  <p id="text4">Some of the most important subjects I studied were programming and algorithms, databases and SQL, computer networks, operating systems, web development, information security, and data science with big data.</p>
+  <p id="text4">
+During my university studies, I took many subjects that gave me a complete and solid education in Systems Engineering. Some of the most important ones were programming and algorithms, databases and SQL, computer networks, operating systems, web development, information security, and data science with big data.
+<br><br>
+In programming and algorithms, I learned the fundamentals of software development. I studied languages like Java, C++, Python, and JavaScript, and I learned how to design efficient algorithms, use data structures like arrays, lists, stacks, and trees, and solve complex problems using logical thinking.
+<br><br>
+In databases and SQL, I learned how to design, create, and manage relational databases. I studied normalization, indexes, transactions, and advanced queries. I also learned how to connect databases to web applications and how to optimize performance for large volumes of data.
+<br><br>
+In computer networks, I learned how data travels through the internet, how to configure routers and switches, and how to design secure networks. I studied protocols like TCP/IP, HTTP, DNS, and learned about network security, firewalls, and VPNs.
+<br><br>
+In operating systems, I studied how Windows, Linux, and macOS work internally. I learned about processes, memory management, file systems, and how to administer servers. This knowledge is essential for any Systems Engineer who works with infrastructure and cybersecurity.
+<br><br>
+In web development, I learned how to create modern websites and web applications using HTML, CSS, JavaScript, PHP, and frameworks like Bootstrap. I also learned about responsive design, APIs, and how to deploy applications to the cloud. Finally, in data science and big data, I learned how to analyze large volumes of data using Python, SQL, and tools like Pandas and NumPy, and how to extract valuable insights that help companies make better decisions.
+  </p>
 
-  <button class="speak-btn" onclick="speak('text4')">🔊 Listen in English</button>
-  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
+  <div class="voice-panel">
+    <div class="label">🎧 LISTEN IN ENGLISH:</div>
+    <button class="speak-btn" onclick="speak('text4')">🔊 Escuchar en inglés</button>
+    <button class="speak-btn stop" onclick="stopSpeak()">⏹ Detener</button>
+    <div class="status" id="status4"></div>
+  </div>
 
   <div class="translation">
-    <strong>Traducción:</strong> Algunas de las materias más importantes que estudié fueron programación y algoritmos, bases de datos y SQL, redes de computadoras, sistemas operativos, desarrollo web, seguridad de la información y ciencia de datos con big data.
+    <strong>Traducción:</strong> Durante mis estudios universitarios, llevé muchas materias que me dieron una educación completa y sólida en Ingeniería de Sistemas. Algunas de las más importantes fueron programación y algoritmos, bases de datos y SQL, redes de computadoras, sistemas operativos, desarrollo web, seguridad de la información y ciencia de datos con big data. En programación y algoritmos, aprendí los fundamentos del desarrollo de software. Estudié lenguajes como Java, C++, Python y JavaScript, y aprendí a diseñar algoritmos eficientes, usar estructuras de datos como arreglos, listas, pilas y árboles, y resolver problemas complejos usando pensamiento lógico. En bases de datos y SQL, aprendí a diseñar, crear y gestionar bases de datos relacionales. Estudié normalización, índices, transacciones y consultas avanzadas. También aprendí a conectar bases de datos con aplicaciones web y a optimizar el rendimiento para grandes volúmenes de datos. En redes de computadoras, aprendí cómo viajan los datos por internet, cómo configurar routers y switches, y cómo diseñar redes seguras. Estudié protocolos como TCP/IP, HTTP, DNS, y aprendí sobre seguridad de redes, firewalls y VPNs. En sistemas operativos, estudié cómo funcionan internamente Windows, Linux y macOS. Aprendí sobre procesos, gestión de memoria, sistemas de archivos y cómo administrar servidores. Este conocimiento es esencial para cualquier Ingeniero de Sistemas que trabaje con infraestructura y ciberseguridad. En desarrollo web, aprendí a crear sitios web modernos y aplicaciones web usando HTML, CSS, JavaScript, PHP y frameworks como Bootstrap. También aprendí sobre diseño responsivo, APIs y cómo desplegar aplicaciones en la nube. Finalmente, en ciencia de datos y big data, aprendí a analizar grandes volúmenes de datos usando Python, SQL y herramientas como Pandas y NumPy, y a extraer información valiosa que ayuda a las empresas a tomar mejores decisiones.
   </div>
 
   <p class="page-number">Page 4 of 10</p>
 </div>
 
-<!-- ==================== HOJA 5 ==================== -->
+<!-- ============ HOJA 5 ============ -->
 <div class="page">
   <h1>Technical Skills</h1>
-
   <h2>Tools and Technologies</h2>
-  <p id="text5">I have experience with HTML, CSS, and JavaScript for web development. I also work with Python, Java, and PHP. I manage databases like MySQL and PostgreSQL. I am familiar with Linux and Windows Server, and I use Git and GitHub for version control.</p>
+  <p id="text5">
+As a Systems Engineer, I have developed a wide range of technical skills that allow me to work in different areas of technology. My main strengths are in web development, programming, databases, networks, and cybersecurity.
+<br><br>
+In web development, I have solid experience with HTML, CSS, and JavaScript, which are the foundation of any modern website. I also work with PHP and frameworks like Bootstrap to create dynamic and responsive web applications. I know how to design clean, user-friendly interfaces and how to connect the frontend with the backend efficiently.
+<br><br>
+In programming, I have worked with several languages, including Python, Java, C++, and JavaScript. Python is my favorite language for automation, data analysis, and cybersecurity scripts. Java helped me understand object-oriented programming, and C++ gave me a strong foundation in algorithms and memory management.
+<br><br>
+In databases, I manage both relational and non-relational systems. I have experience with MySQL, PostgreSQL, and SQL Server. I know how to design normalized schemas, write complex queries, create stored procedures, and optimize database performance for high-traffic applications.
+<br><br>
+In networks and operating systems, I am familiar with Linux (Ubuntu, Kali, Debian) and Windows Server. I know how to configure networks, manage users and permissions, set up web servers like Apache and Nginx, and apply basic security measures to protect infrastructure.
+<br><br>
+In cybersecurity, I use tools like Kali Linux, Nmap, Wireshark, Metasploit, and Burp Suite. I understand how to perform basic penetration tests, analyze network traffic, identify vulnerabilities, and propose solutions to protect systems. I also use Git and GitHub for version control and collaborative development. I am constantly learning new tools and technologies to stay updated in this fast-changing industry.
+  </p>
 
-  <button class="speak-btn" onclick="speak('text5')">🔊 Listen in English</button>
-  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
+  <div class="voice-panel">
+    <div class="label">🎧 LISTEN IN ENGLISH:</div>
+    <button class="speak-btn" onclick="speak('text5')">🔊 Escuchar en inglés</button>
+    <button class="speak-btn stop" onclick="stopSpeak()">⏹ Detener</button>
+    <div class="status" id="status5"></div>
+  </div>
 
   <div class="translation">
-    <strong>Traducción:</strong> Tengo experiencia con HTML, CSS y JavaScript para desarrollo web. También trabajo con Python, Java y PHP. Manejo bases de datos como MySQL y PostgreSQL. Estoy familiarizado con Linux y Windows Server, y uso Git y GitHub para control de versiones.
+    <strong>Traducción:</strong> Como Ingeniero de Sistemas, he desarrollado una amplia gama de habilidades técnicas que me permiten trabajar en diferentes áreas de la tecnología. Mis principales fortalezas están en desarrollo web, programación, bases de datos, redes y ciberseguridad. En desarrollo web, tengo sólida experiencia con HTML, CSS y JavaScript, que son la base de cualquier sitio web moderno. También trabajo con PHP y frameworks como Bootstrap para crear aplicaciones web dinámicas y responsivas. Sé diseñar interfaces limpias y amigables, y conectar el frontend con el backend de forma eficiente. En programación, he trabajado con varios lenguajes, incluyendo Python, Java, C++ y JavaScript. Python es mi lenguaje favorito para automatización, análisis de datos y scripts de ciberseguridad. Java me ayudó a entender la programación orientada a objetos, y C++ me dio una base sólida en algoritmos y gestión de memoria. En bases de datos, manejo tanto sistemas relacionales como no relacionales. Tengo experiencia con MySQL, PostgreSQL y SQL Server. Sé diseñar esquemas normalizados, escribir consultas complejas, crear procedimientos almacenados y optimizar el rendimiento de bases de datos para aplicaciones de alto tráfico. En redes y sistemas operativos, estoy familiarizado con Linux (Ubuntu, Kali, Debian) y Windows Server. Sé configurar redes, gestionar usuarios y permisos, montar servidores web como Apache y Nginx, y aplicar medidas básicas de seguridad para proteger la infraestructura. En ciberseguridad, uso herramientas como Kali Linux, Nmap, Wireshark, Metasploit y Burp Suite. Entiendo cómo realizar pruebas básicas de penetración, analizar tráfico de red, identificar vulnerabilidades y proponer soluciones para proteger sistemas. También uso Git y GitHub para control de versiones y desarrollo colaborativo. Constantemente aprendo nuevas herramientas y tecnologías para mantenerme actualizado en esta industria que cambia rápidamente.
   </div>
 
   <p class="page-number">Page 5 of 10</p>
 </div>
 
-<!-- ==================== HOJA 6 ==================== -->
+<!-- ============ HOJA 6 ============ -->
 <div class="page">
   <h1>Cybersecurity Knowledge</h1>
-
   <h2>Ethical Hacking</h2>
-  <p id="text6">I have studied ethical hacking and information security. I know how to use basic penetration testing tools such as Kali Linux, Nmap, and Wireshark. My goal is to help companies protect their systems and data from cyber attacks.</p>
+  <p id="text6">
+One of my greatest passions is cybersecurity, especially ethical hacking. I have studied this field deeply and I continue to learn every day, because cyber threats evolve constantly and professionals must stay updated to protect systems and information.
+<br><br>
+Ethical hacking is the practice of using hacking techniques in a legal and authorized way to identify vulnerabilities in systems before malicious attackers can exploit them. Ethical hackers, also known as white hat hackers, help companies improve their security by finding weaknesses and proposing solutions.
+<br><br>
+I have studied the main phases of ethical hacking: reconnaissance, scanning, gaining access, maintaining access, and covering tracks. I understand how attackers think and what tools they use, which allows me to design better defenses and to help organizations protect their assets.
+<br><br>
+I am familiar with tools such as Kali Linux, which is a specialized operating system for penetration testing. I use Nmap to scan networks and discover open ports and services, Wireshark to analyze network traffic, Metasploit to test vulnerabilities, and Burp Suite to analyze web applications.
+<br><br>
+I have also studied common vulnerabilities such as SQL injection, cross-site scripting (XSS), cross-site request forgery (CSRF), and buffer overflow. I know how to identify them, how to exploit them in controlled environments, and how to fix them in real systems.
+<br><br>
+My goal as a cybersecurity professional is to help companies and people protect their data from cyber attacks. I believe that security is not only a technical issue but also an ethical and social responsibility. I want to use my knowledge to make the digital world safer for everyone. I am currently preparing for international certifications in cybersecurity, such as CEH (Certified Ethical Hacker) and CompTIA Security+, to strengthen my skills and my professional profile.
+  </p>
 
-  <button class="speak-btn" onclick="speak('text6')">🔊 Listen in English</button>
-  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
+  <div class="voice-panel">
+    <div class="label">🎧 LISTEN IN ENGLISH:</div>
+    <button class="speak-btn" onclick="speak('text6')">🔊 Escuchar en inglés</button>
+    <button class="speak-btn stop" onclick="stopSpeak()">⏹ Detener</button>
+    <div class="status" id="status6"></div>
+  </div>
 
   <div class="translation">
-    <strong>Traducción:</strong> He estudiado hacking ético y seguridad de la información. Sé usar herramientas básicas de pentesting como Kali Linux, Nmap y Wireshark. Mi meta es ayudar a las empresas a proteger sus sistemas y datos de ataques cibernéticos.
+    <strong>Traducción:</strong> Una de mis mayores pasiones es la ciberseguridad, especialmente el hacking ético. He estudiado este campo profundamente y sigo aprendiendo cada día, porque las amenazas cibernéticas evolucionan constantemente y los profesionales deben mantenerse actualizados para proteger sistemas e información. El hacking ético es la práctica de usar técnicas de hacking de manera legal y autorizada para identificar vulnerabilidades en los sistemas antes de que atacantes maliciosos puedan explotarlas. Los hackers éticos, también conocidos como hackers de sombrero blanco, ayudan a las empresas a mejorar su seguridad encontrando debilidades y proponiendo soluciones. He estudiado las principales fases del hacking ético: reconocimiento, escaneo, obtención de acceso, mantenimiento del acceso y ocultamiento de rastros. Entiendo cómo piensan los atacantes y qué herramientas usan, lo que me permite diseñar mejores defensas y ayudar a las organizaciones a proteger sus activos. Estoy familiarizado con herramientas como Kali Linux, que es un sistema operativo especializado para pruebas de penetración. Uso Nmap para escanear redes y descubrir puertos y servicios abiertos, Wireshark para analizar tráfico de red, Metasploit para probar vulnerabilidades y Burp Suite para analizar aplicaciones web. También he estudiado vulnerabilidades comunes como inyección SQL, cross-site scripting (XSS), cross-site request forgery (CSRF) y desbordamiento de búfer. Sé cómo identificarlas, cómo explotarlas en entornos controlados y cómo corregirlas en sistemas reales. Mi meta como profesional de ciberseguridad es ayudar a empresas y personas a proteger sus datos de ataques cibernéticos. Creo que la seguridad no es solo un tema técnico, sino también una responsabilidad ética y social. Quiero usar mi conocimiento para hacer el mundo digital más seguro para todos. Actualmente me preparo para certificaciones internacionales en ciberseguridad, como CEH (Certified Ethical Hacker) y CompTIA Security+, para fortalecer mis habilidades y mi perfil profesional.
   </div>
 
   <p class="page-number">Page 6 of 10</p>
 </div>
 
-<!-- ==================== HOJA 7 ==================== -->
+<!-- ============ HOJA 7 ============ -->
 <div class="page">
   <h1>Soft Skills</h1>
-
   <h2>Personal Strengths</h2>
-  <p id="text7">I consider myself a responsible, honest, and committed person. I work well in teams and I enjoy collaborating with others. I am good at solving problems and thinking critically. I learn fast and I always try to improve myself.</p>
+  <p id="text7">
+Beyond my technical knowledge, I consider that soft skills are essential for professional success. I have developed a set of personal strengths that allow me to work effectively with others and to face challenges with a positive attitude.
+<br><br>
+First, I consider myself a responsible and committed person. When I take on a task or a project, I give my best effort to complete it successfully and on time. I always keep my promises and I take ownership of my responsibilities, both in personal and professional contexts.
+<br><br>
+Second, I am an honest and ethical person. I believe that integrity is the foundation of any professional career. I always act with transparency, respect, and fairness, and I treat others the way I want to be treated. In the field of cybersecurity, ethics are especially important, because knowledge can be used for good or for bad, and I have chosen to use mine to protect and help others.
+<br><br>
+Third, I work very well in teams. I enjoy collaborating with people from different backgrounds and areas of knowledge, and I believe that the best solutions come from combining diverse perspectives. I listen carefully to others, share my ideas openly, and I am always willing to help my colleagues when they need support.
+<br><br>
+Fourth, I am good at solving problems and thinking critically. When I face a challenge, I analyze it carefully, break it into smaller parts, and look for creative solutions. I am not afraid of making mistakes, because I see them as learning opportunities. I learn fast and I adapt easily to new situations, tools, and environments.
+<br><br>
+Finally, I am a proactive and self-motivated person. I do not wait for others to tell me what to do; I take initiative and look for ways to improve. I am constantly learning new things, reading, practicing, and developing my skills. I believe that continuous improvement is the key to success in any professional field, and I apply this principle every day in my life.
+  </p>
 
-  <button class="speak-btn" onclick="speak('text7')">🔊 Listen in English</button>
-  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
+  <div class="voice-panel">
+    <div class="label">🎧 LISTEN IN ENGLISH:</div>
+    <button class="speak-btn" onclick="speak('text7')">🔊 Escuchar en inglés</button>
+    <button class="speak-btn stop" onclick="stopSpeak()">⏹ Detener</button>
+    <div class="status" id="status7"></div>
+  </div>
 
   <div class="translation">
-    <strong>Traducción:</strong> Me considero una persona responsable, honesta y comprometida. Trabajo bien en equipo y disfruto colaborar con otros. Soy bueno resolviendo problemas y pensando críticamente. Aprendo rápido y siempre trato de superarme.
+    <strong>Traducción:</strong> Más allá de mi conocimiento técnico, considero que las habilidades blandas son esenciales para el éxito profesional. He desarrollado un conjunto de fortalezas personales que me permiten trabajar eficazmente con otros y enfrentar desafíos con una actitud positiva. Primero, me considero una persona responsable y comprometida. Cuando asumo una tarea o un proyecto, doy mi mejor esfuerzo para completarlo con éxito y a tiempo. Siempre cumulo mis promesas y asumo la responsabilidad de mis obligaciones, tanto en el contexto personal como profesional. Segundo, soy una persona honesta y ética. Creo que la integridad es la base de cualquier carrera profesional. Siempre actúo con transparencia, respeto y justicia, y trato a los demás como quiero que me traten a mí. En el campo de la ciberseguridad, la ética es especialmente importante, porque el conocimiento puede usarse para bien o para mal, y yo he elegido usar el mío para proteger y ayudar a otros. Tercero, trabajo muy bien en equipo. Disfruto colaborar con personas de diferentes orígenes y áreas de conocimiento, y creo que las mejores soluciones surgen de combinar perspectivas diversas. Escucho con atención a los demás, comparto mis ideas abiertamente y siempre estoy dispuesto a ayudar a mis colegas cuando necesitan apoyo. Cuarto, soy bueno resolviendo problemas y pensando críticamente. Cuando enfrento un desafío, lo analizo cuidadosamente, lo divido en partes más pequeñas y busco soluciones creativas. No temo equivocarme, porque veo los errores como oportunidades de aprendizaje. Aprendo rápido y me adapto fácilmente a nuevas situaciones, herramientas y entornos. Finalmente, soy una persona proactiva y automotivada. No espero que otros me digan qué hacer; tomo la iniciativa y busco formas de mejorar. Constantemente aprendo cosas nuevas, leo, practico y desarrollo mis habilidades. Creo que la mejora continua es la clave del éxito en cualquier campo profesional, y aplico este principio cada día en mi vida.
   </div>
 
   <p class="page-number">Page 7 of 10</p>
 </div>
 
-<!-- ==================== HOJA 8 ==================== -->
+<!-- ============ HOJA 8 ============ -->
 <div class="page">
   <h1>Work Experience</h1>
-
   <h2>Internship and Freelance</h2>
-  <p id="text8">During my internship, I supported the IT department in maintaining computer equipment, configuring networks, and helping users with technical problems. I have also worked on freelance projects developing websites for small businesses and helping clients improve their digital security.</p>
+  <p id="text8">
+During my professional career, I have gained valuable experience both in an internship and in freelance projects. These experiences have allowed me to apply my knowledge in real situations, develop new skills, and understand how technology works in the business world.
+<br><br>
+During my internship, I worked in the IT department of a company, where I supported the team in maintaining computer equipment, configuring networks, and helping users with technical problems. I learned how to manage tickets, document procedures, and communicate effectively with non-technical users. This experience taught me the importance of patience, clear communication, and teamwork in the technology field.
+<br><br>
+I also participated in the installation and configuration of servers, the setup of local networks, and the implementation of basic security measures. I learned how to use monitoring tools, how to back up data safely, and how to respond to incidents. This hands-on experience was extremely valuable because it allowed me to see how the theory I learned at university applies to real-world situations.
+<br><br>
+In addition to my internship, I have worked on several freelance projects. I have developed websites for small businesses, created databases for inventory management, and helped clients improve their digital security. These projects taught me how to work directly with clients, understand their needs, propose solutions, and deliver results on time and within budget.
+<br><br>
+One of my most rewarding freelance projects was the development of a web application for a local business. I designed the database, developed the frontend and backend, and deployed the application to a cloud server. I also trained the client to use the system and provided ongoing support. This project not only improved my technical skills but also my project management and customer service abilities. Overall, my work experience has prepared me to face the challenges of a full-time professional role.
+  </p>
 
-  <button class="speak-btn" onclick="speak('text8')">🔊 Listen in English</button>
-  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
+  <div class="voice-panel">
+    <div class="label">🎧 LISTEN IN ENGLISH:</div>
+    <button class="speak-btn" onclick="speak('text8')">🔊 Escuchar en inglés</button>
+    <button class="speak-btn stop" onclick="stopSpeak()">⏹ Detener</button>
+    <div class="status" id="status8"></div>
+  </div>
 
   <div class="translation">
-    <strong>Traducción:</strong> Durante mis prácticas, apoyé al departamento de TI en el mantenimiento de equipos, configuración de redes y asistencia a usuarios con problemas técnicos. También he trabajado en proyectos freelance desarrollando sitios web para pequeñas empresas y ayudando a clientes a mejorar su seguridad digital.
+    <strong>Traducción:</strong> Durante mi carrera profesional, he adquirido valiosa experiencia tanto en prácticas como en proyectos freelance. Estas experiencias me han permitido aplicar mis conocimientos en situaciones reales, desarrollar nuevas habilidades y entender cómo funciona la tecnología en el mundo empresarial. Durante mis prácticas, trabajé en el departamento de TI de una empresa, donde apoyé al equipo en el mantenimiento de equipos de cómputo, configuración de redes y ayuda a usuarios con problemas técnicos. Aprendí a gestionar tickets, documentar procedimientos y comunicarme eficazmente con usuarios no técnicos. Esta experiencia me enseñó la importancia de la paciencia, la comunicación clara y el trabajo en equipo en el campo tecnológico. También participé en la instalación y configuración de servidores, la configuración de redes locales y la implementación de medidas básicas de seguridad. Aprendí a usar herramientas de monitoreo, a respaldar datos de forma segura y a responder a incidentes. Esta experiencia práctica fue extremadamente valiosa porque me permitió ver cómo la teoría que aprendí en la universidad se aplica a situaciones del mundo real. Además de mis prácticas, he trabajado en varios proyectos freelance. He desarrollado sitios web para pequeñas empresas, creado bases de datos para gestión de inventarios y ayudado a clientes a mejorar su seguridad digital. Estos proyectos me enseñaron a trabajar directamente con clientes, entender sus necesidades, proponer soluciones y entregar resultados a tiempo y dentro del presupuesto. Uno de mis proyectos freelance más gratificantes fue el desarrollo de una aplicación web para un negocio local. Diseñé la base de datos, desarrollé el frontend y el backend, y desplegué la aplicación en un servidor en la nube. También capacité al cliente para usar el sistema y brindé soporte continuo. Este proyecto no solo mejoró mis habilidades técnicas, sino también mi gestión de proyectos y atención al cliente. En general, mi experiencia laboral me ha preparado para enfrentar los desafíos de un rol profesional a tiempo completo.
   </div>
 
   <p class="page-number">Page 8 of 10</p>
 </div>
 
-<!-- ==================== HOJA 9 ==================== -->
+<!-- ============ HOJA 9 ============ -->
 <div class="page">
   <h1>Goals</h1>
-
   <h2>Short-Term and Long-Term Goals</h2>
-  <p id="text9">In the short term, I want to get a job as a Junior Systems Engineer or Web Developer, improve my English level to advanced, and obtain a certification in cybersecurity. In the long term, I want to become a specialist in ethical hacking, work for an international company, and create my own technology company.</p>
+  <p id="text9">
+As a professional, I have clear goals that guide my career and my personal development. I divide them into short-term, medium-term, and long-term goals, and I work every day to achieve them step by step.
+<br><br>
+In the short term, my main goal is to get a job as a Junior Systems Engineer or Web Developer in a company where I can apply my knowledge, learn from experienced professionals, and grow professionally. I want to work in a dynamic environment where I can face real challenges and contribute to meaningful projects.
+<br><br>
+Another short-term goal is to improve my English level to advanced. I am currently at an intermediate level, and I practice every day by reading, listening, and speaking. I believe that mastering English will open many international opportunities for me and will allow me to work with people from different countries.
+<br><br>
+I also want to obtain a certification in cybersecurity, such as CEH (Certified Ethical Hacker) or CompTIA Security+. These certifications are recognized worldwide and will strengthen my professional profile, especially in the field of ethical hacking.
+<br><br>
+In the medium term, I want to specialize in penetration testing and information security. I want to work on real security projects, help companies protect their systems, and continue learning new tools and techniques. I also want to contribute to the cybersecurity community by sharing knowledge, writing articles, and participating in events.
+<br><br>
+In the long term, my biggest goal is to become a specialist in ethical hacking and to work for an international company. I want to have the opportunity to travel, collaborate with global teams, and solve complex security problems. I also dream of creating my own technology company, focused on cybersecurity and data science, that helps businesses and people protect their digital lives. I know that achieving these goals requires effort, dedication, and continuous learning, but I am committed to working hard every day to make them a reality.
+  </p>
 
-  <button class="speak-btn" onclick="speak('text9')">🔊 Listen in English</button>
-  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
+  <div class="voice-panel">
+    <div class="label">🎧 LISTEN IN ENGLISH:</div>
+    <button class="speak-btn" onclick="speak('text9')">🔊 Escuchar en inglés</button>
+    <button class="speak-btn stop" onclick="stopSpeak()">⏹ Detener</button>
+    <div class="status" id="status9"></div>
+  </div>
 
   <div class="translation">
-    <strong>Traducción:</strong> A corto plazo, quiero conseguir un trabajo como Ingeniero de Sistemas Junior o Desarrollador Web, mejorar mi nivel de inglés a avanzado y obtener una certificación en ciberseguridad. A largo plazo, quiero convertirme en especialista en hacking ético, trabajar para una empresa internacional y crear mi propia empresa tecnológica.
+    <strong>Traducción:</strong> Como profesional, tengo metas claras que guían mi carrera y mi desarrollo personal. Las divido en metas a corto, mediano y largo plazo, y trabajo cada día para alcanzarlas paso a paso. A corto plazo, mi principal meta es conseguir un trabajo como Ingeniero de Sistemas Junior o Desarrollador Web en una empresa donde pueda aplicar mis conocimientos, aprender de profesionales experimentados y crecer profesionalmente. Quiero trabajar en un entorno dinámico donde pueda enfrentar retos reales y contribuir a proyectos significativos. Otra meta a corto plazo es mejorar mi nivel de inglés a avanzado. Actualmente estoy en un nivel intermedio, y practico cada día leyendo, escuchando y hablando. Creo que dominar el inglés me abrirá muchas oportunidades internacionales y me permitirá trabajar con personas de diferentes países. También quiero obtener una certificación en ciberseguridad, como CEH (Certified Ethical Hacker) o CompTIA Security+. Estas certificaciones son reconocidas mundialmente y fortalecerán mi perfil profesional, especialmente en el campo del hacking ético. A mediano plazo, quiero especializarme en pruebas de penetración y seguridad de la información. Quiero trabajar en proyectos reales de seguridad, ayudar a las empresas a proteger sus sistemas y seguir aprendiendo nuevas herramientas y técnicas. También quiero contribuir a la comunidad de ciberseguridad compartiendo conocimiento, escribiendo artículos y participando en eventos. A largo plazo, mi mayor meta es convertirme en especialista en hacking ético y trabajar para una empresa internacional. Quiero tener la oportunidad de viajar, colaborar con equipos globales y resolver problemas complejos de seguridad. También sueño con crear mi propia empresa tecnológica, enfocada en ciberseguridad y ciencia de datos, que ayude a empresas y personas a proteger sus vidas digitales. Sé que alcanzar estas metas requiere esfuerzo, dedicación y aprendizaje continuo, pero estoy comprometido a trabajar duro cada día para hacerlas realidad.
   </div>
 
   <p class="page-number">Page 9 of 10</p>
 </div>
 
-<!-- ==================== HOJA 10 ==================== -->
+<!-- ============ HOJA 10 ============ -->
 <div class="page">
   <h1>Conclusion</h1>
-
   <h2>Thank You</h2>
-  <p id="text10">In conclusion, I am a motivated Systems Engineer with a strong academic background, practical experience, and clear professional goals. I am ready to face new challenges and continue learning every day. Thank you very much for your attention. I am available for any questions you may have.</p>
+  <p id="text10">
+In conclusion, I would like to summarize the most important points of this presentation and to express my gratitude to everyone who has taken the time to listen to me.
+<br><br>
+I am a Systems Engineer graduated from a recognized university in Peru, with a strong academic background and solid technical skills in software development, networks, databases, cybersecurity, and data science. I have practical experience from an internship and from freelance projects, which have allowed me to apply my knowledge in real-world situations and to develop valuable professional skills.
+<br><br>
+I am passionate about ethical hacking and information security, and I am constantly learning new tools and techniques to stay updated in this fast-changing field. My soft skills, such as responsibility, honesty, teamwork, problem-solving, and continuous learning, complement my technical knowledge and make me a well-rounded professional.
+<br><br>
+I have clear short-term, medium-term, and long-term goals. In the short term, I want to get a job as a Junior Systems Engineer or Web Developer, improve my English to an advanced level, and obtain a certification in cybersecurity. In the medium term, I want to specialize in penetration testing and contribute to the cybersecurity community. In the long term, I want to become a specialist in ethical hacking, work for an international company, and create my own technology company.
+<br><br>
+I am a motivated, committed, and hardworking person, ready to face new challenges and to continue growing both personally and professionally. I believe that technology has the power to change the world, and I want to be part of that change, using my skills to protect people and organizations from cyber threats. Thank you very much for your attention. I am available for any questions you may have, and I would be happy to talk more about my experience, my skills, or my goals. Have a wonderful day.
+  </p>
 
-  <button class="speak-btn" onclick="speak('text10')">🔊 Listen in English</button>
-  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
+  <div class="voice-panel">
+    <div class="label">🎧 LISTEN IN ENGLISH:</div>
+    <button class="speak-btn" onclick="speak('text10')">🔊 Escuchar en inglés</button>
+    <button class="speak-btn stop" onclick="stopSpeak()">⏹ Detener</button>
+    <div class="status" id="status10"></div>
+  </div>
 
   <div class="translation">
-    <strong>Traducción:</strong> En conclusión, soy un Ingeniero de Sistemas motivado, con una sólida formación académica, experiencia práctica y metas profesionales claras. Estoy listo para enfrentar nuevos retos y seguir aprendiendo cada día. Muchas gracias por su atención. Estoy disponible para cualquier pregunta que tengan.
+    <strong>Traducción:</strong> En conclusión, me gustaría resumir los puntos más importantes de esta presentación y expresar mi gratitud a todos los que se han tomado el tiempo de escucharme. Soy un Ingeniero de Sistemas egresado de una universidad reconocida del Perú, con una sólida formación académica y habilidades técnicas sólidas en desarrollo de software, redes, bases de datos, ciberseguridad y ciencia de datos. Tengo experiencia práctica de prácticas profesionales y de proyectos freelance, que me han permitido aplicar mis conocimientos en situaciones del mundo real y desarrollar valiosas habilidades profesionales. Me apasiona el hacking ético y la seguridad de la información, y constantemente aprendo nuevas herramientas y técnicas para mantenerme actualizado en este campo que cambia rápidamente. Mis habilidades blandas, como la responsabilidad, la honestidad, el trabajo en equipo, la resolución de problemas y el aprendizaje continuo, complementan mi conocimiento técnico y me convierten en un profesional completo. Tengo metas claras a corto, mediano y largo plazo. A corto plazo, quiero conseguir un trabajo como Ingeniero de Sistemas Junior o Desarrollador Web, mejorar mi inglés a un nivel avanzado y obtener una certificación en ciberseguridad. A mediano plazo, quiero especializarme en pruebas de penetración y contribuir a la comunidad de ciberseguridad. A largo plazo, quiero convertirme en especialista en hacking ético, trabajar para una empresa internacional y crear mi propia empresa tecnológica. Soy una persona motivada, comprometida y trabajadora, lista para enfrentar nuevos desafíos y seguir creciendo tanto personal como profesionalmente. Creo que la tecnología tiene el poder de cambiar el mundo, y quiero ser parte de ese cambio, usando mis habilidades para proteger a personas y organizaciones de las amenazas cibernéticas. Muchas gracias por su atención. Estoy disponible para cualquier pregunta que puedan tener, y estaré encantado de hablar más sobre mi experiencia, mis habilidades o mis metas. Que tengan un excelente día.
   </div>
 
   <p class="page-number">Page 10 of 10</p>
 </div>
 
+<!-- ====== SCRIPT DE VOZ ====== -->
 <script>
-  let currentUtterance = null;
+  let currentRate = 1;
+
+  function loadVoices() {
+    const voices = window.speechSynthesis.getVoices();
+    const english = voices.filter(v => v.lang.toLowerCase().startsWith('en'));
+    console.log('Voces en inglés disponibles:', english.length);
+  }
+  window.speechSynthesis.onvoiceschanged = loadVoices;
+  loadVoices();
 
   function speak(id) {
-    // Detener cualquier lectura anterior
     window.speechSynthesis.cancel();
-
     const text = document.getElementById(id).innerText;
     const utterance = new SpeechSynthesisUtterance(text);
-
-    // Configurar voz en inglés
     utterance.lang = 'en-US';
-    utterance.rate = 0.9;   // velocidad (0.1 a 10)
-    utterance.pitch = 1;    // tono
-    utterance.volume = 1;   // volumen
+    utterance.rate = currentRate;
+    utterance.pitch = 1;
+    utterance.volume = 1;
 
-    // Buscar una voz en inglés
     const voices = window.speechSynthesis.getVoices();
-    const englishVoice = voices.find(v => v.lang === 'en-US') || voices.find(v => v.lang.startsWith('en'));
+    const englishVoice =
+      voices.find(v => v.lang === 'en-US' && v.name.includes('Google')) ||
+      voices.find(v => v.lang === 'en-US') ||
+      voices.find(v => v.lang.toLowerCase().startsWith('en'));
+
     if (englishVoice) utterance.voice = englishVoice;
 
-    currentUtterance = utterance;
+    const statusEl = document.getElementById('status' + id.replace('text',''));
+    if (statusEl) {
+      if (englishVoice) {
+        statusEl.textContent = '🔊 Leyendo con: ' + englishVoice.name;
+        statusEl.className = 'status';
+      } else {
+        statusEl.textContent = '⚠️ Voz por defecto (puede no ser inglés)';
+        statusEl.className = 'status error';
+      }
+    }
+
+    utterance.onend = () => {
+      if (statusEl) { statusEl.textContent = '✅ Lectura finalizada.'; statusEl.className = 'status'; }
+    };
+
     window.speechSynthesis.speak(utterance);
   }
 
   function stopSpeak() {
     window.speechSynthesis.cancel();
   }
-
-  // Cargar voces (algunos navegadores las cargan async)
-  window.speechSynthesis.onvoiceschanged = () => {
-    window.speechSynthesis.getVoices();
-  };
 </script>
 
 </body>
