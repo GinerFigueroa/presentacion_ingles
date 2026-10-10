@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Professional Presentation - Systems Engineer</title>
+<title>English Presentation - Systems Engineer</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -15,11 +15,10 @@
     background: #fff;
     max-width: 850px;
     margin: 0 auto 40px auto;
-    padding: 60px 70px;
+    padding: 50px 60px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.15);
     border-left: 4px solid #c0392b;
-    page-break-after: always;
-    min-height: 1000px;
+    min-height: 900px;
   }
   .page-number {
     text-align: right;
@@ -29,26 +28,20 @@
     font-style: italic;
   }
   h1 {
-    font-size: 32px;
+    font-size: 28px;
     color: #c0392b;
     border-bottom: 2px solid #c0392b;
     padding-bottom: 12px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 20px;
     color: #2c3e50;
-    margin: 25px 0 12px 0;
-  }
-  h3 {
-    font-size: 18px;
-    color: #c0392b;
-    margin-top: 20px;
-    margin-bottom: 8px;
+    margin: 22px 0 10px 0;
   }
   p {
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 1.8;
     margin-bottom: 14px;
     text-align: justify;
   }
@@ -57,7 +50,7 @@
   }
   li {
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.9;
     margin-bottom: 6px;
   }
   .translation {
@@ -68,24 +61,36 @@
     font-size: 14px;
     color: #555;
     font-style: italic;
+    line-height: 1.7;
   }
   .translation strong {
     color: #2980b9;
     font-style: normal;
   }
+  .speak-btn {
+    display: inline-block;
+    background: #c0392b;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 6px 10px 0;
+    transition: background 0.2s;
+    font-family: Arial, sans-serif;
+  }
+  .speak-btn:hover { background: #a93226; }
+  .speak-btn.stop { background: #2c3e50; }
+  .speak-btn.stop:hover { background: #1a252f; }
   .header-info {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .header-info h1 {
     border: none;
-    font-size: 36px;
+    font-size: 34px;
     margin-bottom: 5px;
-  }
-  .header-info p {
-    text-align: center;
-    color: #666;
-    font-size: 15px;
   }
   .divider {
     height: 2px;
@@ -100,192 +105,225 @@
     padding: 4px 12px;
     font-size: 12px;
     border-radius: 3px;
-    margin-right: 6px;
     letter-spacing: 1px;
   }
   @media print {
     body { background: #fff; padding: 0; }
     .page { box-shadow: none; margin: 0; }
+    .speak-btn { display: none; }
   }
 </style>
 </head>
 <body>
 
-<!-- ==================== PAGE 1 ==================== -->
+<!-- ==================== HOJA 1 ==================== -->
 <div class="page">
   <div class="header-info">
     <h1>My Professional Profile</h1>
     <div class="divider"></div>
-    <p>Systems Engineer Graduate</p>
+    <p><span class="badge">SYSTEMS ENGINEER</span></p>
   </div>
 
   <h2>Introduction</h2>
-  <p>Good morning. My name is Giner Figueroa, and I am a recently graduated Systems Engineer. I would like to share with you a brief presentation about myself, my academic background, and my professional goals.</p>
+  <p id="text1">Good morning. My name is Giner Figueroa, and I am a recently graduated Systems Engineer. I would like to share with you a brief presentation about myself, my academic background, and my professional goals. I am passionate about technology, cybersecurity, and data science.</p>
+
+  <button class="speak-btn" onclick="speak('text1')">🔊 Listen in English</button>
+  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
 
   <div class="translation">
-    <strong>Traducción:</strong> Buenos días. Mi nombre es Giner Figueroa y soy un Ingeniero de Sistemas recién egresado. Me gustaría compartir con ustedes una breve presentación sobre mí, mi formación académica y mis metas profesionales.
+    <strong>Traducción:</strong> Buenos días. Mi nombre es Giner Figueroa y soy un Ingeniero de Sistemas recién egresado. Me gustaría compartir con ustedes una breve presentación sobre mí, mi formación académica y mis metas profesionales. Me apasiona la tecnología, la ciberseguridad y la ciencia de datos.
   </div>
 
-  <h2>Personal Information</h2>
-  <ul>
-    <li><strong>Full name:</strong> Giner Figueroa</li>
-    <li><strong>Profession:</strong> Systems Engineer</li>
-    <li><strong>Country:</strong> Peru</li>
-    <li><strong>Languages:</strong> Spanish (native), English (intermediate)</li>
-    <li><strong>Areas of interest:</strong> Ethical Hacking, Data Science, Web Development</li>
-  </ul>
-
-  <div class="translation">
-    <strong>Traducción:</strong> Información personal — Nombre completo, Profesión, País, Idiomas, Áreas de interés.
-  </div>
-
-  <p class="page-number">Page 1 of 5</p>
+  <p class="page-number">Page 1 of 10</p>
 </div>
 
-<!-- ==================== PAGE 2 ==================== -->
+<!-- ==================== HOJA 2 ==================== -->
+<div class="page">
+  <h1>Personal Information</h1>
+
+  <h2>Who I Am</h2>
+  <p id="text2">My full name is Giner Figueroa. I am a Systems Engineer from Peru. I speak Spanish as my native language, and I am improving my English every day. My main areas of interest are ethical hacking, data science, and web development.</p>
+
+  <button class="speak-btn" onclick="speak('text2')">🔊 Listen in English</button>
+  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
+
+  <div class="translation">
+    <strong>Traducción:</strong> Mi nombre completo es Giner Figueroa. Soy Ingeniero de Sistemas de Perú. Hablo español como lengua materna y mejoro mi inglés cada día. Mis principales áreas de interés son el hacking ético, la ciencia de datos y el desarrollo web.
+  </div>
+
+  <p class="page-number">Page 2 of 10</p>
+</div>
+
+<!-- ==================== HOJA 3 ==================== -->
 <div class="page">
   <h1>Academic Background</h1>
 
   <h2>University Education</h2>
-  <p>I studied Systems Engineering at the university, where I gained strong knowledge in software development, networks, databases, and information security. During my studies, I learned how to design, implement, and manage technological solutions for real-world problems.</p>
+  <p id="text3">I studied Systems Engineering at the university. During my studies, I gained strong knowledge in software development, networks, databases, and information security. I learned how to design, implement, and manage technological solutions for real-world problems.</p>
+
+  <button class="speak-btn" onclick="speak('text3')">🔊 Listen in English</button>
+  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
 
   <div class="translation">
-    <strong>Traducción:</strong> Educación universitaria. Estudié Ingeniería de Sistemas en la universidad, donde adquirí sólidos conocimientos en desarrollo de software, redes, bases de datos y seguridad de la información.
+    <strong>Traducción:</strong> Estudié Ingeniería de Sistemas en la universidad. Durante mis estudios, adquirí sólidos conocimientos en desarrollo de software, redes, bases de datos y seguridad de la información. Aprendí a diseñar, implementar y gestionar soluciones tecnológicas para problemas del mundo real.
   </div>
 
-  <h2>Main Subjects</h2>
-  <ul>
-    <li>Programming and Algorithms</li>
-    <li>Databases and SQL</li>
-    <li>Computer Networks</li>
-    <li>Operating Systems</li>
-    <li>Web Development</li>
-    <li>Information Security</li>
-    <li>Data Science and Big Data</li>
-  </ul>
-
-  <div class="translation">
-    <strong>Traducción:</strong> Materias principales — Programación y Algoritmos, Bases de Datos y SQL, Redes de Computadoras, Sistemas Operativos, Desarrollo Web, Seguridad de la Información, Ciencia de Datos y Big Data.
-  </div>
-
-  <h2>Final Project</h2>
-  <p>For my final project, I developed a web application focused on cybersecurity awareness, where users could learn about ethical hacking and safe practices on the internet.</p>
-
-  <div class="translation">
-    <strong>Traducción:</strong> Proyecto final. Para mi proyecto final, desarrollé una aplicación web enfocada en la concientización sobre ciberseguridad, donde los usuarios podían aprender sobre hacking ético y prácticas seguras en internet.
-  </div>
-
-  <p class="page-number">Page 2 of 5</p>
+  <p class="page-number">Page 3 of 10</p>
 </div>
 
-<!-- ==================== PAGE 3 ==================== -->
+<!-- ==================== HOJA 4 ==================== -->
 <div class="page">
-  <h1>Professional Skills</h1>
+  <h1>Main Subjects</h1>
 
-  <h2>Technical Skills</h2>
-  <ul>
-    <li>HTML, CSS, JavaScript</li>
-    <li>Python, Java, PHP</li>
-    <li>MySQL, PostgreSQL</li>
-    <li>Linux and Windows Server</li>
-    <li>Git and GitHub</li>
-    <li>Basic penetration testing tools (Kali Linux, Nmap, Wireshark)</li>
-  </ul>
+  <h2>What I Learned</h2>
+  <p id="text4">Some of the most important subjects I studied were programming and algorithms, databases and SQL, computer networks, operating systems, web development, information security, and data science with big data.</p>
+
+  <button class="speak-btn" onclick="speak('text4')">🔊 Listen in English</button>
+  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
 
   <div class="translation">
-    <strong>Traducción:</strong> Habilidades técnicas — HTML, CSS, JavaScript, Python, Java, PHP, MySQL, PostgreSQL, Linux y Windows Server, Git y GitHub, herramientas básicas de pentesting (Kali Linux, Nmap, Wireshark).
+    <strong>Traducción:</strong> Algunas de las materias más importantes que estudié fueron programación y algoritmos, bases de datos y SQL, redes de computadoras, sistemas operativos, desarrollo web, seguridad de la información y ciencia de datos con big data.
   </div>
 
-  <h2>Soft Skills</h2>
-  <ul>
-    <li>Teamwork and collaboration</li>
-    <li>Problem-solving</li>
-    <li>Critical thinking</li>
-    <li>Fast learning</li>
-    <li>Responsibility and commitment</li>
-  </ul>
-
-  <div class="translation">
-    <strong>Traducción:</strong> Habilidades blandas — Trabajo en equipo, resolución de problemas, pensamiento crítico, aprendizaje rápido, responsabilidad y compromiso.
-  </div>
-
-  <h2>Certifications</h2>
-  <p>I have taken courses in ethical hacking, web development, and data analysis. I am currently preparing for international certifications in cybersecurity.</p>
-
-  <div class="translation">
-    <strong>Traducción:</strong> Certificaciones. He tomado cursos de hacking ético, desarrollo web y análisis de datos. Actualmente me preparo para certificaciones internacionales en ciberseguridad.
-  </div>
-
-  <p class="page-number">Page 3 of 5</p>
+  <p class="page-number">Page 4 of 10</p>
 </div>
 
-<!-- ==================== PAGE 4 ==================== -->
+<!-- ==================== HOJA 5 ==================== -->
+<div class="page">
+  <h1>Technical Skills</h1>
+
+  <h2>Tools and Technologies</h2>
+  <p id="text5">I have experience with HTML, CSS, and JavaScript for web development. I also work with Python, Java, and PHP. I manage databases like MySQL and PostgreSQL. I am familiar with Linux and Windows Server, and I use Git and GitHub for version control.</p>
+
+  <button class="speak-btn" onclick="speak('text5')">🔊 Listen in English</button>
+  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
+
+  <div class="translation">
+    <strong>Traducción:</strong> Tengo experiencia con HTML, CSS y JavaScript para desarrollo web. También trabajo con Python, Java y PHP. Manejo bases de datos como MySQL y PostgreSQL. Estoy familiarizado con Linux y Windows Server, y uso Git y GitHub para control de versiones.
+  </div>
+
+  <p class="page-number">Page 5 of 10</p>
+</div>
+
+<!-- ==================== HOJA 6 ==================== -->
+<div class="page">
+  <h1>Cybersecurity Knowledge</h1>
+
+  <h2>Ethical Hacking</h2>
+  <p id="text6">I have studied ethical hacking and information security. I know how to use basic penetration testing tools such as Kali Linux, Nmap, and Wireshark. My goal is to help companies protect their systems and data from cyber attacks.</p>
+
+  <button class="speak-btn" onclick="speak('text6')">🔊 Listen in English</button>
+  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
+
+  <div class="translation">
+    <strong>Traducción:</strong> He estudiado hacking ético y seguridad de la información. Sé usar herramientas básicas de pentesting como Kali Linux, Nmap y Wireshark. Mi meta es ayudar a las empresas a proteger sus sistemas y datos de ataques cibernéticos.
+  </div>
+
+  <p class="page-number">Page 6 of 10</p>
+</div>
+
+<!-- ==================== HOJA 7 ==================== -->
+<div class="page">
+  <h1>Soft Skills</h1>
+
+  <h2>Personal Strengths</h2>
+  <p id="text7">I consider myself a responsible, honest, and committed person. I work well in teams and I enjoy collaborating with others. I am good at solving problems and thinking critically. I learn fast and I always try to improve myself.</p>
+
+  <button class="speak-btn" onclick="speak('text7')">🔊 Listen in English</button>
+  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
+
+  <div class="translation">
+    <strong>Traducción:</strong> Me considero una persona responsable, honesta y comprometida. Trabajo bien en equipo y disfruto colaborar con otros. Soy bueno resolviendo problemas y pensando críticamente. Aprendo rápido y siempre trato de superarme.
+  </div>
+
+  <p class="page-number">Page 7 of 10</p>
+</div>
+
+<!-- ==================== HOJA 8 ==================== -->
 <div class="page">
   <h1>Work Experience</h1>
 
-  <h2>Internship</h2>
-  <p>During my internship, I supported the IT department in maintaining computer equipment, configuring networks, and assisting users with technical problems. This experience helped me understand how technology works in a real company.</p>
+  <h2>Internship and Freelance</h2>
+  <p id="text8">During my internship, I supported the IT department in maintaining computer equipment, configuring networks, and helping users with technical problems. I have also worked on freelance projects developing websites for small businesses and helping clients improve their digital security.</p>
+
+  <button class="speak-btn" onclick="speak('text8')">🔊 Listen in English</button>
+  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
 
   <div class="translation">
-    <strong>Traducción:</strong> Prácticas. Durante mis prácticas, apoyé al departamento de TI en el mantenimiento de equipos, configuración de redes y asistencia a usuarios con problemas técnicos. Esta experiencia me ayudó a entender cómo funciona la tecnología en una empresa real.
+    <strong>Traducción:</strong> Durante mis prácticas, apoyé al departamento de TI en el mantenimiento de equipos, configuración de redes y asistencia a usuarios con problemas técnicos. También he trabajado en proyectos freelance desarrollando sitios web para pequeñas empresas y ayudando a clientes a mejorar su seguridad digital.
   </div>
 
-  <h2>Freelance Projects</h2>
-  <p>I have worked on freelance projects developing websites for small businesses, creating databases, and helping clients improve their digital security.</p>
-
-  <div class="translation">
-    <strong>Traducción:</strong> Proyectos freelance. He trabajado en proyectos freelance desarrollando sitios web para pequeñas empresas, creando bases de datos y ayudando a clientes a mejorar su seguridad digital.
-  </div>
-
-  <h2>Achievements</h2>
-  <ul>
-    <li>Developed 3 complete web applications</li>
-    <li>Designed and implemented a small corporate network</li>
-    <li>Participated in cybersecurity workshops</li>
-  </ul>
-
-  <div class="translation">
-    <strong>Traducción:</strong> Logros — Desarrollé 3 aplicaciones web completas, diseñé e implementé una pequeña red corporativa, participé en talleres de ciberseguridad.
-  </div>
-
-  <p class="page-number">Page 4 of 5</p>
+  <p class="page-number">Page 8 of 10</p>
 </div>
 
-<!-- ==================== PAGE 5 ==================== -->
+<!-- ==================== HOJA 9 ==================== -->
 <div class="page">
-  <h1>Goals and Conclusion</h1>
+  <h1>Goals</h1>
 
-  <h2>Short-Term Goals</h2>
-  <ul>
-    <li>Get a job as a Junior Systems Engineer or Web Developer</li>
-    <li>Improve my English level to advanced</li>
-    <li>Obtain a certification in cybersecurity</li>
-  </ul>
+  <h2>Short-Term and Long-Term Goals</h2>
+  <p id="text9">In the short term, I want to get a job as a Junior Systems Engineer or Web Developer, improve my English level to advanced, and obtain a certification in cybersecurity. In the long term, I want to become a specialist in ethical hacking, work for an international company, and create my own technology company.</p>
 
-  <div class="translation">
-    <strong>Traducción:</strong> Metas a corto plazo — Conseguir un trabajo como Ingeniero de Sistemas Junior o Desarrollador Web, mejorar mi nivel de inglés a avanzado, obtener una certificación en ciberseguridad.
-  </div>
-
-  <h2>Long-Term Goals</h2>
-  <ul>
-    <li>Become a specialist in Ethical Hacking</li>
-    <li>Work for an international company</li>
-    <li>Create my own technology company</li>
-  </ul>
+  <button class="speak-btn" onclick="speak('text9')">🔊 Listen in English</button>
+  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
 
   <div class="translation">
-    <strong>Traducción:</strong> Metas a largo plazo — Convertirme en especialista en Hacking Ético, trabajar para una empresa internacional, crear mi propia empresa tecnológica.
+    <strong>Traducción:</strong> A corto plazo, quiero conseguir un trabajo como Ingeniero de Sistemas Junior o Desarrollador Web, mejorar mi nivel de inglés a avanzado y obtener una certificación en ciberseguridad. A largo plazo, quiero convertirme en especialista en hacking ético, trabajar para una empresa internacional y crear mi propia empresa tecnológica.
   </div>
 
-  <h2>Conclusion</h2>
-  <p>In conclusion, I am a motivated Systems Engineer with a strong academic background, practical experience, and clear professional goals. I am ready to face new challenges and continue learning every day. Thank you very much for your attention.</p>
-
-  <div class="translation">
-    <strong>Traducción:</strong> Conclusión. En conclusión, soy un Ingeniero de Sistemas motivado, con una sólida formación académica, experiencia práctica y metas profesionales claras. Estoy listo para enfrentar nuevos retos y seguir aprendiendo cada día. Muchas gracias por su atención.
-  </div>
-
-  <p class="page-number">Page 5 of 5</p>
+  <p class="page-number">Page 9 of 10</p>
 </div>
+
+<!-- ==================== HOJA 10 ==================== -->
+<div class="page">
+  <h1>Conclusion</h1>
+
+  <h2>Thank You</h2>
+  <p id="text10">In conclusion, I am a motivated Systems Engineer with a strong academic background, practical experience, and clear professional goals. I am ready to face new challenges and continue learning every day. Thank you very much for your attention. I am available for any questions you may have.</p>
+
+  <button class="speak-btn" onclick="speak('text10')">🔊 Listen in English</button>
+  <button class="speak-btn stop" onclick="stopSpeak()">⏹ Stop</button>
+
+  <div class="translation">
+    <strong>Traducción:</strong> En conclusión, soy un Ingeniero de Sistemas motivado, con una sólida formación académica, experiencia práctica y metas profesionales claras. Estoy listo para enfrentar nuevos retos y seguir aprendiendo cada día. Muchas gracias por su atención. Estoy disponible para cualquier pregunta que tengan.
+  </div>
+
+  <p class="page-number">Page 10 of 10</p>
+</div>
+
+<script>
+  let currentUtterance = null;
+
+  function speak(id) {
+    // Detener cualquier lectura anterior
+    window.speechSynthesis.cancel();
+
+    const text = document.getElementById(id).innerText;
+    const utterance = new SpeechSynthesisUtterance(text);
+
+    // Configurar voz en inglés
+    utterance.lang = 'en-US';
+    utterance.rate = 0.9;   // velocidad (0.1 a 10)
+    utterance.pitch = 1;    // tono
+    utterance.volume = 1;   // volumen
+
+    // Buscar una voz en inglés
+    const voices = window.speechSynthesis.getVoices();
+    const englishVoice = voices.find(v => v.lang === 'en-US') || voices.find(v => v.lang.startsWith('en'));
+    if (englishVoice) utterance.voice = englishVoice;
+
+    currentUtterance = utterance;
+    window.speechSynthesis.speak(utterance);
+  }
+
+  function stopSpeak() {
+    window.speechSynthesis.cancel();
+  }
+
+  // Cargar voces (algunos navegadores las cargan async)
+  window.speechSynthesis.onvoiceschanged = () => {
+    window.speechSynthesis.getVoices();
+  };
+</script>
 
 </body>
 </html>
